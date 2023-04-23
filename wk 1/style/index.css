@@ -17,6 +17,9 @@ header {
      grid-template-columns: 150px auto;
      color: white;
      box-sizing: border-box;
+     border-radius: 15px;
+     border-top: 2.9px solid #fefcfc;
+
 
 }
 h1 {
@@ -37,11 +40,10 @@ img {
     width: 129px;
     height: 100px;
     margin: 10px;
-    border: 1px solid black;
+    border: -1px solid rgb(255, 255, 255);
     box-sizing: border-box;
     border-radius: 15px;
-    text-shadow: 2px 2px 4px #000000;
-    box-shadow: 0px -10px 30px #ccc;
+    box-shadow: 10px 0px 30px #c4c4c4;
 
 
 }
@@ -62,7 +64,13 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
     border-top: 1.9px solid #ffffff;
     border-top-style: inherit;
+    border-radius: 15px;
+}
 
-
-
+#currentdate, h3, #currentyear {
+    color: #ffe604;
+    background-color:rgb(38, 2, 22);
+    border-radius: 5.5px;
+    padding: .25rem;
+    border-top: 2.9px solid #fefcfc;
 }
