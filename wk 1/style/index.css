@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Tapestry&display=swap");
+
+body {
+  background-color: rgb(38, 2, 22);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: whitesmoke;
+}
+div, main, footer {
+    margin: 1.25rem auto;
+    max-width: 760px;
+}
+header {
+    background-color: #f76f08;
+     display: grid;
+     grid-template-columns: 150px auto;
+     color: white;
+     box-sizing: border-box;
+
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    color: #ffe604;
+    text-align: center;
+    font-size: 44px;
+    font-family: 'Tapestry', cursive; 
+    margin-top: 5%;
+    margin-bottom: 5%;    
+    border-bottom: 1.5px solid #424141;
+}
+
+img {
+    float: left;
+    width: 129px;
+    height: 100px;
+    margin: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 15px;
+    text-shadow: 2px 2px 4px #000000;
+    box-shadow: 0px -10px 30px #ccc;
+
+
+}
+p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Tapestry', cursive; 
+    margin-top: 5%;
+    margin-bottom: 5%;    
+    border-bottom: 1.5px solid #424141;
+}
+footer {
+    background-color:  #f76f08;
+    color: white;
+    text-align: center;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 1.9px solid #ffffff;
+    border-top-style: inherit;
+
+
+
+}
