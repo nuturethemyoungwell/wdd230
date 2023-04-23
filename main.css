@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+    margin: 10px;
+    max-width: 760px;
+    align-items: center;
+}
+
+header {
+    background-color: rgb(254, 207, 168);
+    padding: 1.5rem;
+    color: rgb(255, 4, 0);
+}
