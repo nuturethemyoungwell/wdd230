@@ -6,7 +6,14 @@ body {
 }
 
 header {
-    background-color: rgb(254, 207, 168);
+    background-color: rgb(233, 105, 0);
     padding: 1.5rem;
-    color: rgb(255, 4, 0);
+    color: rgb(0, 0, 0);
+}
+
+#portal {
+    color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-inline-start: 5rem;
+    margin-right: 15px;
 }
