@@ -1,11 +1,11 @@
 const daynames = [
+    "Sunday",
     "Monday",
     "Tuesday",
     "Wednesday",
     "Thursday",
     "Fridays",
-    "Saturday",
-    "Sunday"
+    "Saturday"
 ];
 //month long details
 const monthNames = [
