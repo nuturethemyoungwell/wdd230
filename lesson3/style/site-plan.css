@@ -1,12 +1,14 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 4em;
   text-align: center;
   background-color: rgb(38, 2, 22);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
   color: whitesmoke;
 }
 .img {
@@ -22,25 +24,35 @@ body {
 .brand {
     display: block;
     margin: 0 auto;
+    margin-bottom: 90px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
-}
+
 h2 {
   text-align: center;
+}
+
+.h4 {
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
 }
 hr {
   height: 3px;
   margin: 35px 0;
   background: var(--accent1-color);
 }
+.list {
+    text-align: justify;
+    margin-top: 100px;
+}
+
 .footer, header {
     display: flex;
     padding: 1em;
     text-align: center;
     background-color: #f76f08;
+    font-family: Tapestry;
     grid-template-columns: 150px auto;
     color: white;
     box-sizing: border-box;
@@ -48,27 +60,35 @@ hr {
     border-top: 2.9px solid #fefcfc;
     
     }
-header > h1, header > h2 {
-  color: var(--headline-color-on-color);
-}
 
 p {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color);
   padding: 1em;
 }
+
 .colors {
   width: 100%;
   min-width: 350px;
-  margin: 30px auto;
-  text-align: center;
+  margin-top: 100px;
+  text-align: center;  
+  margin-bottom: 100px;
 }
 .colors th {
   background-color: #999;
+
 }
 .colors td{
-  width: 25%;
-  height: 3em;
+    width: 25%;
+    height: 3em;
+}
+
+.typography {
+    margin-bottom: 100px;
+}
+
+.color-palette {
+    margin-top: 100px;
 }
 
 .primary {
@@ -78,10 +98,10 @@ p {
   background-color: #f76f08;
 }
 .accent1 {
-  background-color: var(--accent1-color);
+  background-color: #ffffff;
 }
 .accent2{
-  background-color: var(--accent2-color);
+  background-color: #000080;
 }
 
 p.colored {
@@ -89,46 +109,30 @@ p.colored {
   color: var(--paragraph-color-on-color);
 }
 
-nav {
-    background-color: rgb(38, 2, 22);
-    line-height: 3em;
-    text-align: center;
-    font-size: 1.2em;
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    text-align: center;
+/* Style the navigation menu */
+.navbar {
+    width: 100%;
+    overflow: auto;
+  }
+  
+  /* Navigation links */
+  .navbar a {
+    float: left;
+    padding: 1.2px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 33.33%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
+    overflow: hidden;
+    flex-direction: column;
+  }
+  
+  /* Add a background color on mouse-over */
+  .navbar a:hover {
+    background-color: navy;
+  }
 
-}
-
-nav a {
-	display: block;
-	color: #fff;
-	text-align: center;
-	padding: 15px;
-	text-decoration: none;
-	font-size: 0.9rem;
-}
-
-nav a:hover {
-	background-color: #708080;
-	color: yellow;
-}
-
-nav a {
-  padding:1em;
-  min-width: 120px;
-  text-decoration: none;
-
-
-}
-nav a:link, nav a:visited {
-  color: var(--nav-link-color);
-}
-nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
-}
 footer {
     background-color:  #f76f08;
     color: white;
@@ -146,4 +150,26 @@ footer {
     border-radius: 5.5px;
     padding: .25rem;
     border-top: 2.9px solid #fefcfc;
+}
+.persona {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #ffe604;
+    text-align: justify;
+}
+
+.scenerio {
+    margin-top: 90px;
+    margin-bottom: 100px;
+    text-align: justify;
+}
+
+  /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left; /* If you want the text to be left-aligned on small screens */
+    }
 }
