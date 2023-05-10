@@ -12,7 +12,6 @@ body {
   color: whitesmoke;
 }
 .img {
-    float: left;
     width: 129px;
     height: 100px;
     margin: 10px;
@@ -20,6 +19,7 @@ body {
     box-sizing: border-box;
     border-radius: 15px;
     box-shadow: 10px 0px 30px #c4c4c4;
+ 
 }
 .brand {
     display: block;
@@ -144,12 +144,11 @@ footer {
     border-radius: 15px;
 }
 
-#currentdate, h3, #currentyear {
-    color: #ffe604;
-    background-color:rgb(38, 2, 22);
-    border-radius: 5.5px;
-    padding: .25rem;
-    border-top: 2.9px solid #fefcfc;
+#currentdate, #currentyear {
+    color: navy;
+    background-color: #f76f08;
+  
+   
 }
 .persona {
     display: grid;
