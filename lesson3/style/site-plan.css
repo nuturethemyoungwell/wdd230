@@ -15,6 +15,7 @@ body {
     width: 129px;
     height: 100px;
     margin: 10px;
+    margin-right: 150px;
     border: -1px solid rgb(255, 255, 255);
     box-sizing: border-box;
     border-radius: 15px;
@@ -39,7 +40,6 @@ h2 {
 hr {
   height: 3px;
   margin: 35px 0;
-  background: var(--accent1-color);
 }
 .list {
     text-align: justify;
@@ -51,7 +51,6 @@ hr {
     padding: 1em;
     text-align: center;
     background-color: #f76f08;
-    font-family: Tapestry;
     grid-template-columns: 150px auto;
     color: white;
     box-sizing: border-box;
@@ -61,8 +60,6 @@ hr {
     }
 
 p {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color);
   padding: 1em;
 }
 
