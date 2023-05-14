@@ -1,0 +1,66 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+h1 p {margin: 0 2vw;}
+
+nav button {
+    margin: .2rem 2vw; /*move away from the edge of the page 2vw--*/
+    background-color: transparent;
+    border: none;
+    font-size: 2rem; /*hamburger bar should be 48px tall--*/
+    color: #555;
+}
+nav {
+    background-color: #eee;
+}
+
+nav ul {
+    /*--remove the list in dotted format---*/
+    list-style-type:none;
+    /*add padding of zero to remove the large space on the left fo the menu list---*/
+    padding: 0;
+    /*add margin zero to remove the space btn hamburger icon and the list --*/
+    margin: 0;
+
+}
+
+/*style nav menu list--*/
+nav ul li a {
+    display: block; /*make everthing clickable on the pagemenu --*/
+    padding: .8rem 2wv;
+    text-decoration: none;
+    color: #333;
+    border-top: 1px solid rgb(0, 0, 0, 0.5);
+}
+
+/*show active page differently --*/
+nav ul li.active a {
+    background-color: rgb(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+/*create hover to make mouse pointer show on pointing --*/
+nav ul li a:hover {
+    background-color: rgb(0, 0, 0, 0.3);
+}
+nav ul {
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+#hamburgerBtn span:nth-child(1) 
+{
+    display: block;
+}
+
+#hamburgerBtn span:nth-child(2){display: none;}
+
+#hamburgerBtn.open span:nth-child(1){display: none;}
+
+#hamburgerBtn.open span:nth-child(2) {display: block;}

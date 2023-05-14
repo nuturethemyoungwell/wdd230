@@ -1,0 +1,20 @@
+/*35rem is also 560px when basefont is  16px */
+@media only screen and (min-width: 35rem){
+    /*remove the hamburger menu on all medium screen */
+    nav button {
+        display: none;
+    }
+
+    /*-- use display flex to display child element side by side --*/
+    nav ul #primaryNav{
+        display: flex;
+        /*add margin to align nav items with the page title */
+        margin-left: 2vw;
+        border-left: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+    }
+}
