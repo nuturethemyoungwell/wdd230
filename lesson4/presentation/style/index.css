@@ -109,7 +109,7 @@ body {
       text-align: center;
 
   }
-  h2 {
+  .rise_shake {
     animation: jump-shaking 0.83s infinite;
   }
 
