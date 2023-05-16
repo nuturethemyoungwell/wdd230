@@ -6,22 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Tapestry&display=swap">
     <link rel="stylesheet" href="../wk 1/style/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
 
     <title>Chamber of Commerce Home Page</title>
 </head>
 <body>
+   <div id="content">
     <header>
-        <nav id="main-navbar" class="navbar-fixed-top">
-            <button id="hamburger-button"&#9776></button>
-            <ul class="nav-items">
-                <li><a href="#" title="Home">Home</a></li>
-                <li><a href="#" title="About">About</a></li>
-                <li><a href="#" title="Service">Service</a></li>
-                <li><a href="#" title="History">Discover</a></li>
-                <li><a href="#" title="Contact">Contact</a></li>
-                <li><a href="#" title="Contact">join Us</a></li>
-            </ul>
-        </nav>
+        <div class="header_flex1">
+            <div class="title">
+                <a id="logo_link" href="index.html">
+                    <img class="logo" src="images/logo.png" alt="Chamber logo">
+                </a>
+                <h1>Graceman Chamber of Commerce</h1>
+            </div>
+            <!--Navigation-->
+            <nav>
+                <ul class="nav-items">
+                    <li><a class="hamburger" href="#" onclick="toggleMenu()">&#9776</a></li>
+                    <li><a href="#" title="Home">Home</a></li>
+                    <li><a href="#" title="About">Discovery</a></li>
+                    <li><a href="#" title="Service">Directory</a></li>
+                    <li><a href="#" title="History">Join</a></li>
+                    <li><a href="#" title="Contact">Contact</a></li>
+                </ul>
+            </nav>
+           <!--Social Links-->
+           <div class="social_links">
+            <a href="#" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="#" target="_blank">
+                <img src="images/whatsapp.jpg" alt="WhatsApp icon">
+            </a>
+            <a href="#" target="_blank">
+                <img src="images/YouTube.png" alt="YouTube icon">
+            </a>
+           </div> 
+        </div>
+        <!--current date-->            
+      <div id="currentDate"></div>
     </header>
+      
+   </div>
+   <main>
+    <section class="event">Events</section>
+
+    <!--hero image-->
+    <section class="hero_image">Hero Image and Action Button
+        <div class="button-box">
+            <a class="book" href="rates.html">Join Now</a>
+        </div>
+    </section>
+
+    <!--sportlight 1-->
+    <section class="spotlight_1">Spotlight 1</section>
+
+    <!--Weather-->
+    <section class="weather">weather</section>
+
+    <!--sportlight 2-->
+    <section class="spotlight_2">Spotlight 2</section>
+
+    <!--Join Us-->
+    <section class="join">Join Us</section>
+
+    <!--New release-->
+    <section class="news">News Release</section>
+
+    <!--Sportlight 3-->
+    <section class="spotlight_3">Sportlight 3</section>
+   </main>
+   <footer>
+    <nav id="footer-nav">
+        <div class="title_footer">
+            <span id="logo_link" href="index.html">
+                <img class="footer_logo" src="images/logo.png" alt="Chamber logo">
+            </span>
+
+            <div class="footer_head">
+                <h3 >Graceman Chamber of Commerce</h3>
+                <span class="city">CX-187-9363, Kasland City</span>
+            </div>
+        </div>
+
+        <div id="contact-info">
+            <span>rapahelgraceman@gmail.com</span>
+            <span>+(233) 5462-29003</span>
+            <span id="location">Location Map</span>
+        </div>
+    </nav>
+    <section class="footer_row2">
+        <div class="copyright"> &copy; <span id="currentyear"></span>Graceman Chamber</div>   
+        <span class="name">Dotse Raphael         |</span>    
+        <span class="course_name">WDD 230 Project  |</span>   
+        <span class="last_modified">Last Modified: <span id="currentdate"></span> </span>
+    </section>
+   </footer>
+
+   <!--scripts-->
+   <script src="scripts/datetime.js"></script>
+   <script src="scripts/current_date.js"></script>
 </body>
 </html>
