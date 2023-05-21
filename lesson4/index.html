@@ -13,15 +13,14 @@
     <title>Chamber of Commerce Home Page</title>
 </head>
 <body>
-   <div id="content">
     <header>
-        <div class="header_flex1">
-            <div class="title">
-                <a id="logo_link" href="index.html">
-                    <img class="logo" src="images/logo.png" alt="Chamber logo">
-                </a>
-                <h1>Graceman Chamber of Commerce</h1>
-            </div>
+           <div id="content">
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.png" alt="Chamber logo">
+            </a>
+            <h1 id="h1_style">
+                <span id="title_tag">Graceman</span> <span id="title_desc">Chamber of Commerce</span> 
+            </h1>
             <!--Navigation-->
             <nav>
                 <ul class="nav-items">
@@ -33,24 +32,22 @@
                     <li><a href="#" title="Contact">Contact</a></li>
                 </ul>
             </nav>
-           <!--Social Links-->
-           <div class="social_links">
-            <a href="#" target="_blank">
-                <img src="images/facebook.png" alt="fb icon">
-            </a>
-            <a href="#" target="_blank">
-                <img src="images/whatsapp.jpg" alt="WhatsApp icon">
-            </a>
-            <a href="#" target="_blank">
-                <img src="images/YouTube.png" alt="YouTube icon">
-            </a>
-           </div> 
-        </div>
-        <!--current date-->            
-      <div id="currentDate"></div>
+            <!--Social Links-->
+            <div class="social_links">
+                <a href="#" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="images/whatsapp.jpg" alt="WhatsApp icon">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="images/linedIn.png" alt="LinkedIn icon">
+                </a>
+            </div> 
+            <!--current date-->            
+            <div id="currentdate"></div>
+           </div>
     </header>
-      
-   </div>
    <main>
     <section class="event">Events</section>
 
@@ -80,28 +77,25 @@
     <section class="spotlight_3">Sportlight 3</section>
    </main>
    <footer>
-    <nav id="footer-nav">
-        <div class="title_footer">
-            <span id="logo_link" href="index.html">
+    <nav id="footing_nav">
+        <div id="footer-nav">
+            <div id="logo_link" href="index.html">
                 <img class="footer_logo" src="images/logo.png" alt="Chamber logo">
-            </span>
-
-            <div class="footer_head">
-                <h3 >Graceman Chamber of Commerce</h3>
-                <span class="city">CX-187-9363, Kasland City</span>
             </div>
-        </div>
 
-        <div id="contact-info">
-            <span>rapahelgraceman@gmail.com</span>
-            <span>+(233) 5462-29003</span>
-            <span id="location">Location Map</span>
+                <div id="footer_head">
+                    <h3>Graceman Chamber of Commerce<br> <span id="digital_address">CX-187-9363, Kasland City</span></h3>
+                </div>
+
+            <div id="contact-info">
+                <span>rapahelgraceman@gmail.com</span> <br><span>+(233) 5462-29003</span><br>
+                <span id="location">Location Map</span>
         </div>
     </nav>
-    <section class="footer_row2">
+    <section id="footer_row2">
         <div class="copyright"> &copy; <span id="currentyear"></span>Graceman Chamber</div>   
-        <span class="name">Dotse Raphael         |</span>    
-        <span class="course_name">WDD 230 Project  |</span>   
+        <span class="name">Dotse Raphael         </span>    
+        <span class="course_name">WDD 230 Project  </span>   
         <span class="last_modified">Last Modified: <span id="currentdate"></span> </span>
     </section>
    </footer>
