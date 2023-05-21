@@ -1,6 +1,6 @@
 body {
     background-color: rgb(38, 2, 22);
-    list-style: 1.5rem;
+    list-style: none;
     line-height: 1.5;
     color: antiquewhite;
 }
@@ -18,7 +18,7 @@ footer, header {
     margin: 20px;
 }
 
-#logo_link {
+.logo_link {
     grid-column: 1;
     margin-top: 5px;
 }
@@ -79,7 +79,6 @@ h1 {
     margin-top: -30px;
     margin-left: 20px;
     border-radius: 15px;
-
 }
 nav {
     grid-column: 3;
@@ -135,7 +134,7 @@ footer {
 }
 
 #logo_link {
-    flex: 1/2;
+    flex: 1;
 
 }
 
@@ -158,7 +157,6 @@ footer {
 
 #footer-nav, a:hover {
     color: white;
-    background-color: none;
 }
 
 #footer_row2 {
