@@ -90,7 +90,7 @@ nav, ul, .nav-items {
 }
 nav a {
     text-align: center;
-    color: white;
+    color: #8b8080;
     text-decoration: #2b1c10;
     padding: 20px;
     opacity: .6;
@@ -156,7 +156,7 @@ footer {
 
 
 #footer-nav, a:hover {
-    color: white;
+    color: rgb(38, 2, 22);
 }
 
 #footer_row2 {
@@ -169,6 +169,7 @@ footer {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 5px;
+    color:  rgb(38, 2, 22);
     
 }
 
