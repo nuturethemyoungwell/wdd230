@@ -1,23 +1,215 @@
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+*{
+   margin: 0;
+   padding: 0;
+   
+}
+
+body{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 h1 p {margin: 0 2vw;}
+*/
 
-nav button {
-    margin: .2rem 2vw; 
-    background-color: transparent;
-    border: none;
-    font-size: 2rem;  
-    color: #555;
+
+/*Mobile View size *****************/
+header, footer {
+    background-color: #f76f08;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: .75rem;
+    border: 1px solid rgba(0,0,0,0.2);
 }
+
+header, main, footer {
+    max-width: 767px;
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 1.1 rem;
+}
+
 nav {
-    background-color: #eee;
+    /*background-color: #eee;*/
+    margin: auto;
+    max-width: 780;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .9);
 }
 
 nav ul {
-     list-style-type:none;
-     padding: 0;
-     margin: 0;
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav ul li a {
+    display: block;
+    color: #8b8080;
+    text-align: center;
+    padding: .75rem;
+    text-decoration: none;
+    font-size: .95rem;
+    background: linear-gradient(90 edeg, transparent, red, transparent);
+    transition: .5s; 
+}
+
+.active {
+    color: green;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    gap: 10px;
+    font-size: 0.8rem;
+    min-height: 200px;
+}
+
+/* Main Designs Layout ********/
+#hero_image {
+    max-width: 100%;
+    grid-column: 1;
+    grid-row: 1;
+}
+#large {
+    display: none;
+}
+
+#small {
+    display: block;
+    /*overflow: auto;*/
+}
+
+#medium {
+    display: none;
+}
+
+#event {
+    grid-column: 1;
+    grid-row: 2;
+    min-height: 200px;
+}
+
+#weather {
+    grid-column: 1;
+    grid-row: 3;
+    min-height: 200px;
+}
+
+#news {
+    grid-column: 1;
+    grid-row: 4;
+    min-height: 200px;
+}
+#join {
+    display: none;
+}
+
+
+#hero_image #hero_join:hover, #join #active-join {
+    background-color: rgb(255, 0, 0);
+}
+
+#hero_join:hover {
+    background-color: red;
+    font-size: 1rem;
+    transition: .5s;
+    color: rgb(255, 255, 255)
+}
+#sportlights {
+    grid-column: 1;
+    grid-row: 5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+#spotlight_1 {
+    grid-column: 1;
+    grid-row: 1;
+    min-height: 200px;
+}
+
+#spotlight_2 {
+    grid-column:1 ;
+    grid-row: 2;
+    min-height: 200px;
+} 
+#spotlight_3 {
+    display: none;
+}
+
+.contact_us {
+    display: none;
+}
+footer {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav button {
+    margin: .1rem 1vw; 
+    background-color: grey;
+    font-size: .9rem;  
+    padding: 1px;
 
 }
+
+#nav-items {
+    list-style: inside;
+}
+#hamburgerBtn {
+    display: block;
+    top: 10px;
+    right: 10px;
+    width: fit-content;
+    font-size: 1.5rem;
+    padding: 1px;
+    color: navy;
+    box-shadow: none;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #234223;
+}
+.nav-menu li {
+    display: none;
+}
+.nav-menu li a {
+    padding: 1.15rem;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.nav-menu li a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+/* when the button is clicked - the responsive class is added and accounted for here */
+.nav-menu.responsive li {
+	display: block;
+	width: 100%;
+}
+.nav-menu.responsive li a {
+	display: block;
+}
+

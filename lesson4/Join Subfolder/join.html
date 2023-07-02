@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the home page portal for WDD 230 project">
+    <link rel="shortcut icon" href="favicon(1).ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Tapestry&display=swap">
+    <link rel="stylesheet" href="../wk_1/style/medium.css">
+    <link rel="stylesheet" href="../styles/large.css">
+    <link rel="stylesheet" href="forms.css">
+
+    <title>Chamber of Commerce Home Page</title>
+</head>
+<body>
+    <span id="display"></span>
+    <header>
+           <div id="content">
+                <picture>
+                    <source media="(max-width: 799px)" srcset="#">
+                    <source media="(min-width: 800px)" srcset="#">
+                    <a class="logo_link" href="index.html">
+                        <img class="logo" src="../images/logo.png" alt="Chamber logo">
+                    </a>
+                </picture>
+                <h1 id="h1_style">
+                    <span id="title_tag">Graceman</span> <span id="title_desc">Chamber of Commerce</span> 
+                </h1>
+                <!--Navigation-->
+                <nav id="nav-items">
+                    <button id="hamburgerBtn">&#9776;</button>
+                    <ul class="nav-menu">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="#">Discovery</a></li>
+                        <li><a href="#">Directory</a></li>
+                        <li><a href="#">Join</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <!--Social Links-->
+                <div class="social_links">
+                    <a href="#" target="_blank">
+                        <img src="../images/whatsapp.jpg" alt="WhatsApp icon"></a>
+                    <a href="#" target="_blank">
+                        <img src="../images/linedIn.png" alt="LinkedIn icon"></a>
+                    <a href="#" target="_blank">
+                        <img src="../images/facebook.png" alt="fb icon"></a>
+                </div> 
+                <!--current date-->            
+                <div id="currentdate"></div>
+           </div>
+    </header>
+    <main>
+        <div class="join_chamber">
+            <h1>Welcome to the Graceman Chamber</h1>
+            <p> To join the Chmaber, please enter the following information</p>
+            <div id="feedback">
+                <form action="forms" method="post">
+                    <ul class="vert_forms">
+                        <li class="vert_1">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user_name" value="First and Last Name">
+                        </li>
+        
+                        <li class="vert_2">
+                            <label for="mail">E-mail:</label>
+                            <input type="email" id="mail" name="user_email" value="example@gmail.com">
+                        </li>
+        
+                
+                        <li id="forms_message">
+                            <label for="msg">Message:</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </li>    
+        
+                        <li>
+                            <div class="reset">
+                                <input type="reset" value="Reset">
+                            </div>
+                        </li>    
+        
+                        <li>
+                            <div class="submit">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </li>
+                    </ul>
+                
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <nav id="footing_nav">
+            <div id="footer-nav">
+                <a class="logo_link" href="index.html">
+                    <img class="footer_logo" src="../images/logo.png" alt="Chamber logo">
+                </a>
+
+                    <div id="footer_head">
+                        <h3>Graceman Chamber of Commerce<br> <span id="digital_address">CX-187-9363, Kasland City</span></h3>
+                    </div>
+
+                <div id="contact-info">
+                    <span>rapahelgraceman@gmail.com</span> <br><span>+(233) 5462-29003</span><br>
+                    <span id="location">Location Map</span>
+                </div>
+            </div>
+        </nav>
+        <div id="footer_row2">
+            <div class="copyright"> &copy; <span id="currentyear"></span>Graceman Chamber</div>   
+            <span class="name">Dotse Raphael         </span>    
+            <span class="course_name">WDD 230 Project  </span>   
+            <span class="last_modified">Last Modified: <span id="currentDate"></span> </span>
+        </div>
+    </footer>
+
+   <!--scripts-->
+   <script src="../scripts/datetime.js"></script>
+   <script src="../scripts/current_date.js"></script>
+   <script src="../scripts/hamburgerBtn.js"></script>
+   <script src="../scripts/greetings.js"></script>
+   <script src="forms.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center;
+}
+
+main {
+    display: block;
+    line-height: 5rem;
+}
+.join_chamber {
+    margin-top: 30px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 14px;
+    margin-top: 80px;
+}
+#feedback ul {
+    display: block;
+    list-style-type: none;
+}
+
+#feedback {
+    margin-top: 40px;
+}
+ li #forms_message {
+    margin-top: -20px;
+ }
+li .reset {
+    margin-top: -30px;
+}
+
+li .submit {
+    margin-top: -30px;
+}

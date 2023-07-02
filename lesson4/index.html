@@ -9,72 +9,127 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Tapestry&display=swap">
     <link rel="stylesheet" href="../wk_1/style/medium.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
 
     <title>Chamber of Commerce Home Page</title>
 </head>
 <body>
+    <span id="display"></span>
     <header>
            <div id="content">
-            <a class="logo_link" href="index.html">
-                <img class="logo" src="images/logo.png" alt="Chamber logo">
-            </a>
-            <h1 id="h1_style">
-                <span id="title_tag">Graceman</span> <span id="title_desc">Chamber of Commerce</span> 
-            </h1>
-            <!--Navigation-->
-            <nav>
-                <ul class="nav-items">
-                    <li><a class="hamburger" href="#" onclick="toggleMenu()">&#9776;</a></li>
-                    <li><a href="#" title="Home">Home</a></li>
-                    <li><a href="#" title="About">Discovery</a></li>
-                    <li><a href="#" title="Service">Directory</a></li>
-                    <li><a href="#" title="History">Join</a></li>
-                    <li><a href="#" title="Contact">Contact</a></li>
-                </ul>
-            </nav>
-            <!--Social Links-->
-            <div class="social_links">
-                <a href="#" target="_blank">
-                    <img src="images/whatsapp.jpg" alt="WhatsApp icon">
-                </a>
-                <a href="#" target="_blank">
-                    <img src="images/linedIn.png" alt="LinkedIn icon">
-                </a>
-                <a href="#" target="_blank">
-                    <img src="images/facebook.png" alt="fb icon">
-                </a>
-            </div> 
-            <!--current date-->            
-            <div id="currentdate"></div>
+                <picture>
+                    <source media="(max-width: 799px)" srcset="#">
+                    <source media="(min-width: 800px)" srcset="#">
+                    <a class="logo_link" href="index.html">
+                        <img class="logo" src="images/logo.png" alt="Chamber logo">
+                    </a>
+                </picture>
+                <h1 id="h1_style">
+                    <span id="title_tag">Graceman</span> <span id="title_desc">Chamber of Commerce</span> 
+                </h1>
+                <!--Navigation-->
+                <nav id="nav-items">
+                    <button id="hamburgerBtn">&#9776;</button>
+                    <ul class="nav-menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Discovery</a></li>
+                        <li><a href="#">Directory</a></li>
+                        <li><a href="./Join Subfolder/join.html">Join</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <!--Social Links-->
+                <div class="social_links">
+                    <a href="#" target="_blank">
+                        <img src="images/whatsapp.jpg" alt="WhatsApp icon"></a>
+                    <a href="#" target="_blank">
+                        <img src="images/linedIn.png" alt="LinkedIn icon"></a>
+                    <a href="#" target="_blank">
+                        <img src="images/facebook.png" alt="fb icon"></a>
+                </div> 
+                <!--current date-->            
+                <div id="currentdate"></div>
            </div>
     </header>
    <main>
-    <div class="event">Events</div>
-
-    <!--hero image-->
-    <div class="hero_image">Hero Image and Action Button
-        <div class="button-box">
-            <a class="book" href="rates.html">Join Now</a>
-        </div>
+     <!--hero image-->
+     <div id="hero_image">
+        <h2>Welcome to Graceman<span id="large"><span id="medium"><span id="small"></span></h2>
+        <picture>
+            <img src="images/hero-resized.jpeg" alt="Hero Image">
+        </picture>
+        <button class="button-box">
+            <a id="hero_join" href="./Join Subfolder/join.html">Join the Chamber</a>
+        </button>
+    </div>
+    <div id="event">
+        <h3>Ribbon Cutting</h3> 
+        <span>The Diamond Shack</span>
+        <p>Join Us for the grand opening of the Diamond Shack, 
+            Wednesday at 1:00 pm. </p>
     </div>
 
-    <!--sportlight 1-->
-    <div class="spotlight_1">Spotlight 1</div>
+    <section id="sportlights">
+        <!--sportlight 1-->
+        <div id="spotlight_1">
+            <!--<img src="images/transport.jpeg" alt="image"> -->
+            <h4>Joyprime Transport Service</h4>
+            <p>We are for you!</p><br><br>
+            <div class="contact_us">
+                <span>graceman@gmail.com</span><br>
+                <a>+(233) 546229003   |   <span class="website" href="index.html">Website</span></a>
+            </div>
+        </div>
+
+        <!--sportlight 2-->
+        <div id="spotlight_2">
+            <h4>ProfCom's IT Centre</h4>
+            <p>An after school Computer Tutoring</p><br><br>
+            <div class="contact_us"> 
+                <span>graceman@gmail.com</span><br>
+                <a>+(233) 546229003   |   <span class="website" href="index.html">Website</span></a>
+            </div>
+        </div>
+
+        <!--Sportlight 3-->
+        <div id="spotlight_3">
+            <h4>Children's Love Foundation</h4>
+            <p>We support 1000 orphans a week across the globe. </p><br><br>
+            <div class="contact_us"> 
+                <span>graceman@gmail.com</span><br>
+                <a>+(233) 546229003   |   <span class="website" href="index.html">Website</span></a>
+            </div>
+        </div>
+    </section>
+
 
     <!--Weather-->
-    <div class="weather">weather</div>
-
-    <!--sportlight 2-->
-    <div class="spotlight_2">Spotlight 2</div>
+    <div id="weather">
+        <h4>Weather</h4>
+        <img src="#" alt="Weather image">
+        
+    </div>
 
     <!--Join Us-->
-    <div class="join">Join Us</div>
+    <div id="join">
+        <button class="button-box">
+            <a id="active_join" href="./Join Subfolder/join.html">Join Us</a>
+        </button>
+        <p>Discover how to join the Chamber of Commerce
+            and how it will benefict your organization.
+        </p>
+        
+    </div>
 
     <!--New release-->
-    <div class="news">News Release</div>
+    <div id="news">
+        <h4>News Release</h4>
+        <p>Over 1000 entry level Young Local Enterpreneurs
+            are reaching proficiency. Enterpreneurs who joined within the last two months
+            are enjoying bronze returns.</p>
+    </div>
 
-    <!--Sportlight 3-->
-    <div class="spotlight_3">Sportlight 3</div>
    </main>
    <footer>
     <nav id="footing_nav">
@@ -83,12 +138,12 @@
                 <img class="footer_logo" src="images/logo.png" alt="Chamber logo">
             </a>
 
-                <div id="footer_head">
-                    <h3>Graceman Chamber of Commerce<br> <span id="digital_address">CX-187-9363, Kasland City</span></h3>
-                </div>
+            <div id="footer_head">
+                <h3>Graceman Chamber of Commerce<br> <span id="digital_address">CX-187-9363, Kasland City</span></h3>
+            </div>
 
             <div id="contact-info">
-                <span>rapahelgraceman@gmail.com</span> <br><span>+(233) 5462-29003</span><br>
+                <span>raphaelgraceman@gmail.com</span> <br><span>+(233) 5462-29003</span><br>
                 <span id="location">Location Map</span>
             </div>
         </div>
@@ -104,5 +159,7 @@
    <!--scripts-->
    <script src="scripts/datetime.js"></script>
    <script src="scripts/current_date.js"></script>
+   <script src="scripts/hamburgerBtn.js"></script>
+   <script src="scripts/greetings.js"></script>
 </body>
 </html>

@@ -15,7 +15,6 @@ button.addEventListener('click', () => {
   listItem.appendChild(listBtn);
   listBtn.textContent = '❌';
   itemAdded = list.appendChild(listItem);
-  alert("This item would be added");
 
   listBtn.addEventListener('click', () => {
     list.removeChild(listItem);

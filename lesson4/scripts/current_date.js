@@ -31,3 +31,9 @@ const currentdate = "     " + dayName + ", " + todaysdate.getDate() + " " + mont
 
 document.getElementById("currentdate").textContent = currentdate;
 document.getElementById("currentDate").textContent = currentdate;
+
+//Text Overlay on hero Image//
+const phone = "Small";
+document.getElementById("large").textContent = "Large";
+document.getElementById("medium").textContent = "Medium";
+document.getElementsById("small").textContent = phone;
