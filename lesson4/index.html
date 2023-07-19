@@ -8,14 +8,16 @@
     <link rel="shortcut icon" href="favicon(1).ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Tapestry&display=swap">
     <link rel="stylesheet" href="../wk_1/style/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+
 
     <title>Chamber of Commerce Home Page</title>
 </head>
 <body>
-    <span id="display"></span>
+    <div id="banner"></div>
     <header>
            <div id="content">
                 <picture>
@@ -26,18 +28,20 @@
                     </a>
                 </picture>
                 <h1 id="h1_style">
-                    <span id="title_tag">Graceman</span> <span id="title_desc">Chamber of Commerce</span> 
+                    <span id="title_tag">Graceman</span><br><span id="title_desc">Chamber of Commerce</span> 
                 </h1>
                 <!--Navigation-->
                 <nav id="nav-items">
-                    <button id="hamburgerBtn">&#9776;</button>
                     <ul class="nav-menu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Discovery</a></li>
-                        <li><a href="#">Directory</a></li>
-                        <li><a href="./Join Subfolder/join.html">Join</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li class="bar"><a href="#">Home</a></li>
+                        <li class="bar"><a href="#">Discovery</a></li>
+                        <li class="bar"><a href="#">Directory</a></li>
+                        <li class="bar"><a href="./Join Subfolder/join.html">Join</a></li>
+                        <li class="bar"><a href="#">Contact</a></li>
                     </ul>
+                    <div>
+                        <button id="hamburgerBtn">&#9776;</button>
+                    </div>
                 </nav>
                 <!--Social Links-->
                 <div class="social_links">
@@ -49,20 +53,20 @@
                         <img src="images/facebook.png" alt="fb icon"></a>
                 </div> 
                 <!--current date-->            
-                <div id="currentdate"></div>
            </div>
+        <div id="currentdate"></div>
     </header>
    <main>
      <!--hero image-->
      <div id="hero_image">
-        <h2>Welcome to Graceman<span id="large"><span id="medium"><span id="small"></span></h2>
+        <h2>Welcome to Graceman<span id="large"><br><span id="medium"><br></nr><span id="small"></span></h2>
         <picture>
             <img src="images/hero-resized.jpeg" alt="Hero Image">
         </picture>
-        <button class="button-box">
-            <a id="hero_join" href="./Join Subfolder/join.html">Join the Chamber</a>
-        </button>
     </div>
+    <button class="button-box">
+        <a id="hero_join" href="./Join Subfolder/join.html">Join the Chamber</a>
+    </button>
     <div id="event">
         <h3>Ribbon Cutting</h3> 
         <span>The Diamond Shack</span>
@@ -106,8 +110,7 @@
 
     <!--Weather-->
     <div id="weather">
-        <h4>Weather</h4>
-        <img src="#" alt="Weather image">
+        <h4 href="./weather_appi/weather-api.html">Weather</h4>
         
     </div>
 

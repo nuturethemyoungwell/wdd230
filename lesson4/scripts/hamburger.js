@@ -8,8 +8,9 @@
 //})
 
 const hamburger = document.querySelector("#hamburgerBtn");
-const navigation = document.querySelector(".nav-menu");
+const navMenu = document.querySelector(".nav-menu");
 
-hamburgerBtn.addEventListener("click", () => {
-	navigation.classList.toggle("responsive");
+hamburger.addEventListener("click", () => {
+	hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
 });
