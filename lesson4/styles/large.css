@@ -94,7 +94,8 @@ footer, header {
     }
     
     .button-box  {
-    position: relative;    background-color: rgb(255, 234, 3);
+        position: relative;    
+        background-color: rgb(255, 234, 3);
         padding: 10px;
         border-radius: 10px;
         text-decoration: none;
@@ -102,7 +103,7 @@ footer, header {
     }
    
     #hero_join {
-        margin-top: 130px;
+        margin-top: 30px;
     }
     
     #small {

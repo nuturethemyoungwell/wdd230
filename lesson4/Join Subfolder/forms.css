@@ -5,40 +5,149 @@
 body {
     text-align: center;
 }
-
 main {
     display: block;
-    line-height: 5rem;
 }
-.join_chamber {
+
+h2 {
     margin-top: 30px;
+    margin-bottom: 60px;
+    color: yellow;
+}
+
+.mainDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 35px;
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 20px;
     text-align: center;
 }
 
-h1 {
-    text-align: center;
-    margin-bottom: 30px;
+#forms {
+    grid-column: 1;
+    grid-row: 1;
+    border: 2px solid rgba(254, 254, 254, 0.133);
+    border-radius: 15px;
 }
 
+#select_1 {
+    font-size: 17px;
+    color: white;
+    background: rgb(254, 95, 3);
+    border-radius: 20px;
+   
+}
+.text_parag {
+    grid-column: 2;
+} 
+
+.agyakoo {
+    grid-column: 1/3;
+    grid-row: 2;
+}
+
+#personal_details{
+    grid-column: 1;
+    grid-row: 1;
+    border: 1px solid rgb(254, 95, 3);
+    border-radius: 15px;  
+    margin-bottom: 60px;
+    white-space: 20px;
+}
+#membership_info {
+    grid-column: 2;
+    grid-row: 1;
+    border: 1px solid rgb(254, 95, 3);
+    border-radius: 15px; 
+    margin-bottom: 60px;
+ 
+}
+
+#membership_package {
+    grid-column: 1/3;
+    grid-row: 2;
+    border: 1px solid rgb(254, 95, 3);
+    border-radius: 15px; 
+    text-align: justify; 
+}
+.radius {
+    border: 0.1px solid rgb(254, 95, 3);
+    border-radius: 15px;
+    width: 160px;
+    font-size: 12px;
+    text-align: center;
+    color: yellow;
+}
+legend {
+    font-size: 20px;
+}
+
+.top {
+    display: list-item;
+    font-style: italic;
+    justify-content: left;
+}
+
+#bus_descr {
+    text-align: left;
+
+}
+textarea {
+    margin: 10px;
+}
+
+.level {
+        margin-left: 10px;
+}
+.description {
+    margin-left: 10px;
+}
+.submit {
+    grid-column: 1/3;
+    grid-row: 3;
+    width: 180px;
+    border-radius: 15px;
+    margin-left: 40%;
+    margin-right: 40%;
+    cursor: pointer;
+}
+.submit:hover {
+    background-color: #f40303f1;
+    font-size: 18px;
+    transition: .5s;
+    color: white;
+    font-weight: 20px;
+    padding: 1rem;
+
+}
+/*.ads {
+    grid-column: 1/2;
+    grid-row: 1;
+}*/
+
+
+.agyakoo p{
+    font-style: italic;
+    columns: white;
+    background: red;
+    text-align: left;
+    font-size: 17.5px;
+    font-weight: bold;
+    transition: .5s;
+}
 p {
     font-size: 14px;
-    margin-top: 80px;
+    margin-top: 25px;
 }
-#feedback ul {
-    display: block;
-    list-style-type: none;
-}
-
-#feedback {
-    margin-top: 40px;
-}
- li #forms_message {
-    margin-top: -20px;
- }
-li .reset {
-    margin-top: -30px;
+input {
+    margin-left: 20px;
+    background-color: rgb(246, 210, 246);
+    cursor: pointer;
 }
 
-li .submit {
-    margin-top: -30px;
-}
+

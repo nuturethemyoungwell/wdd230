@@ -52,41 +52,54 @@
            </div>
     </header>
     <main>
-        <div class="join_chamber">
-            <h1>Welcome to the Graceman Chamber</h1>
-            <p> To join the Chmaber, please enter the following information</p>
-            <div id="feedback">
-                <form action="forms" method="post">
-                    <ul class="vert_forms">
-                        <li class="vert_1">
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="user_name" value="First and Last Name">
-                        </li>
+        <h2>Join The Chamber Now</h2>
+
+        <div class="mainDiv">
+            
+            <div class="text_parag">
+                <figure>
+                    <img src="image/classroom.jpg" alt="office building">
+                </figure>
+                <p>This is Our main office situated here in the Central Region, Kasland City</p>
+                <p>For Bronze memberships espscially the educational sectors, we support the industry company with</p><br>
+               
+                <p>All Bronze Members are  entitled to this benefits.</p>
+            </div>
+
+            <div class="agyakoo">
+                <p>NB: <br>Special holidays is our day. It is the peoples' day. Members of the Chmaber together with their 
+                    love ones and families, celebrate events that evoke happiness, joy and cheer loves ones they have missed so well.</p>
+                <figure>
+                    <img src="image/pool.jpeg" alt="office building">
+                </figure>
+               
+            </div>
+
+            <div id="forms">
+                <form method="get" action="thankyou.html">
+                    <fieldset id="personal_details">
+                        <legend class="radius">Contact Info</legend><br>
+                        <label class="top">First Name*<input type="text" name="fname" required></label><br><br>
+                        <label class="top">Last Name*<input type="text" name="lname" required></label><br><br>
+                        <label class="top">Email*<input type="email" name="email" placeholder="raphael48@gmail.com" required></label><br><br>
+                        <label class="top">Phone*<input type="tel" name="phone" required></label><br>
+                    </fieldset>
+                    <fieldset id="membership_info">
+                        <legend class="radius">Membership Info</legend><br>
+                        <label class="top">Business Position<input type="text" name="bus-position" pattern="[A-Za-z\s-]{7,}" title="Business Position"></label><br><br>
+                        <label class="top">Business Name<input type="text" name="bus-name" title="Business Name" required></label><br><br>
+                        <label class="top" id="bus_descr">Business Description <br><textarea rows="10"  name="business_desc"></textarea></label><br>
         
-                        <li class="vert_2">
-                            <label for="mail">E-mail:</label>
-                            <input type="email" id="mail" name="user_email" value="example@gmail.com">
-                        </li>
-        
-                
-                        <li id="forms_message">
-                            <label for="msg">Message:</label>
-                            <textarea id="msg" name="user_message"></textarea>
-                        </li>    
-        
-                        <li>
-                            <div class="reset">
-                                <input type="reset" value="Reset">
-                            </div>
-                        </li>    
-        
-                        <li>
-                            <div class="submit">
-                                <input type="submit" value="Submit">
-                            </div>
-                        </li>
-                    </ul>
-                
+                    </fieldset>
+                    <fieldset id="membership_package">
+                        <legend class="radius">Membership Package</legend><span id="select_1">Select one of these options</span><br><br>
+                        <label class="choices"><input type="radio" name="member" value="np"><span class="level"> Non-profit </span><span class="cost"> Free </span></label><p class="description"> Have your business listed in the Chamber's online directory.</p>
+                        <label class="choices"><input type="radio" name="member" value="bronze"><span class="level"> Bronze </span><span class="cost"> $500 </span></label><p class="description"> Your company by being included in our website spotlights and online directory. </p>
+                        <label class="choices"><input type="radio" name="member" value="silver"><span class="level"> Silver </span><span class="cost"> $1,000 </span></label><p class="description"> Stay up-to-date in the Chamber's events, receive spotlights, and be included in the chamber's online directory.</p>
+                        <label class="choices"><input type="radio" name="member" value="gold"><span class="level"> Gold </span><span class="cost"> $2,000 </span></label><p class="description"> Become a part of the conversation at executive meetings, formal dinners, events, spotlights, and included in the online directory.</p>
+                    </fieldset>
+                    <label><input type="hidden" id="submitdate" name="submitdate" value=""> </label>
+                    <input type="submit" class="submit" value="Join the Chamber">
                 </form>
             </div>
         </div>
@@ -124,4 +137,4 @@
    <script src="../scripts/greetings.js"></script>
    <script src="forms.js"></script>
 </body>
-</html>
+</html>                 
